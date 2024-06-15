@@ -1,0 +1,26 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.inner-container{
+    border: 2px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.318);
+    margin-top: 90px;
+}
+form{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 30px;
+}
+mat-form-field ,button{
+    width: 100%;
+}
+mat-hint{
+    color: red;
+}
+.Signin-btn-container{
+    margin-top: 20px;
+}

@@ -1,0 +1,66 @@
+<div *ngIf="authContainer else sellersignInform" class="seller-signup-form d-flex justify-content-center">
+    <div class="border p-4 inner-form-container">
+        <div>
+            <p class="fs-5 signup-text">Seller's Sign Up</p>
+        </div>
+        <form #sellerSignup="ngForm" (ngSubmit)="sellerSignupForm(sellerSignup.value)">
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>enter your name</mat-label>
+                    <input matInput placeholder="Placeholder" pattern="[a-zA-z' ']+$" name="name" #name="ngModel" ngModel required>
+                    <mat-error *ngIf="name.touched && name.invalid">invalid name</mat-error>
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your email</mat-label>
+                    <input type="email" matInput placeholder="email" name="email"#email="ngModel" ngModel required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <mat-error *ngIf="email.touched && email.invalid">invalid email</mat-error>
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" required ngModel minlength="4" name="password">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error>invalid password</mat-error>
+                  </mat-form-field>
+            </div>
+            <button class="signup-btn" mat-stroked-button color="primary">sign Up</button>
+        </form>
+        <p class="mt-2 seller-auth-toggle" (click)="showSignIn()">alreardy a user ?<span class="text-primary">sign In</span></p>
+    </div>
+</div>
+
+<ng-template #sellersignInform>
+    <div class="seller-signin-form d-flex justify-content-center ">
+        <div class="border p-4 inner-form-container">
+            <div>
+                <p class="fs-4 signup-text">Seller's Sign In</p>
+            </div>
+            <form #sellerSignIn="ngForm">
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Enter your email</mat-label>
+                        <input type="email" matInput placeholder="email" name="email" #email="ngModel" ngModel required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <mat-error>invalid email</mat-error>
+                      </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <mat-label>Enter your password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" required ngModel minlength="4" name="password">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                        <mat-error>invalid password</mat-error>
+                      </mat-form-field>
+                </div>
+            </form>
+            <button class="signin-btn" mat-stroked-button color="primary" (click)="sellerSignInForm(sellerSignIn.value)">sign In</button>
+            <p class="mt-2 seller-auth-toggle" (click)="showSignUp()">Dont have an account ? <span class="text-primary">sign Up</span></p>
+        </div>
+    </div>
+</ng-template>

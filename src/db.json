@@ -1,0 +1,208 @@
+{
+  "seller": [
+    {
+      "id": "45c8",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "2222"
+    },
+    {
+      "id": "14c6",
+      "name": "jhon",
+      "email": "jhon@gmail.com",
+      "password": "jhon"
+    },
+    {
+      "id": "ccb5",
+      "name": "aaaa",
+      "email": "aaaa@gmail.com",
+      "password": "aaaa"
+    }
+  ],
+  "product": [
+    {
+      "name": "Lenovo Ideapad 3",
+      "price": "36990",
+      "color": "silver",
+      "catagory": "laptop",
+      "discription": "Lenovo IdeaPad 3 Intel Core i3 12th Gen (15.6 inch, 8GB, 512GB, Windows 11, MS Office 2021, Intel UHD, Full HD Display, Arctic Grey, 82RK00VVIN)",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.uN8Kb2YdcxKryUy-dU2h9AAAAA&pid=Api&P=0&h=180",
+      "id": "190c"
+    },
+    {
+      "id": "1296",
+      "name": "amazfit Pop 3R Smartwatch",
+      "price": "3,999",
+      "color": "silver",
+      "catagory": "watch",
+      "discription": "amazfit Pop 3R Smartwatch with Bluetooth Calling (36.32mm AMOLED Display, IP68 Water Resistant, Metallic Silver Strap)\n",
+      "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1706883203/Croma%20Assets/Communication/Wearable%20Devices/Images/302170_0_qqpnqf.png?tr=w-640"
+    },
+    {
+      "name": "   OnePlus 12 5G",
+      "price": "69999",
+      "color": "black",
+      "catagory": "mobile",
+      "discription": "OnePlus 12 5G (16GB RAM, 512GB, Silky Black)",
+      "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1706018189/Croma%20Assets/Communication/Mobiles/Images/304448_wswpyx.png?tr=w-640",
+      "id": "0bd1"
+    },
+    {
+      "id": "2419",
+      "name": "AllenSoly",
+      "price": "479",
+      "color": "brown",
+      "catagory": "Shirt",
+      "discription": "Lymio Casual Shirt for Men|| Shirt for Men|| Men Stylish Shirt (Rib-Shirt)",
+      "image": "https://m.media-amazon.com/images/I/71V5gEc8YVL._SY550_.jpg"
+    },
+    {
+      "id": "8c54",
+      "name": "U.S.Polo",
+      "price": "699",
+      "color": "maroon",
+      "catagory": "shirt",
+      "discription": "Dennis Lingo Men's Cotton Box Checkered Slim Fit Casual Shirt with Chest Pocket, Full Sleeve Shirt for Formal & Casual Wear",
+      "image": "https://m.media-amazon.com/images/I/511mroWTy+L._SY679_.jpg"
+    },
+    {
+      "id": "c628",
+      "name": "Urban Fashion",
+      "price": "699",
+      "color": "blue",
+      "catagory": "jeans",
+      "discription": "Lymio Men Jeans || Men Jeans Pants || Denim Jeans || Baggy Jeans for Men (Jeans-04-05)",
+      "image": "https://m.media-amazon.com/images/I/71iKT8rnZnL._SY879_.jpg"
+    },
+    {
+      "name": "NetPlay",
+      "price": "849",
+      "color": "sky blue",
+      "catagory": "jeans",
+      "discription": "M. R. Fashion Men's Regular Fit Jeans",
+      "image": "https://m.media-amazon.com/images/I/719dXjHil4L._SX679_.jpg",
+      "id": "092b"
+    },
+    {
+      "name": "Allen Cooper",
+      "price": "1449",
+      "color": "white",
+      "catagory": "shoes",
+      "discription": "Allen Cooper \n Training,RoadRunning,Cricket,Gym,Sports Shoes for Men",
+      "image": "https://m.media-amazon.com/images/I/61xIr93-6VL._SY575_.jpg",
+      "id": "aa36"
+    }
+  ],
+  "users": [
+    {
+      "id": "846f",
+      "name": "hrutikesh",
+      "email": "hello@gmail.com",
+      "phone": "1111111111",
+      "dob": "1111-11-11",
+      "password": "hhhh",
+      "country": "india"
+    },
+    {
+      "id": "b92c",
+      "name": "Hrutikesh Ekawade",
+      "email": "hrushi@gmail.com",
+      "phone": "7499671830",
+      "dob": "1111-11-11",
+      "password": "1111",
+      "country": "india"
+    }
+  ],
+  "cart": [
+    {
+      "id": "a1c7",
+      "name": "admin",
+      "email": "1122334455",
+      "password": "1235"
+    },
+    {
+      "id": "ee65",
+      "name": "Urban Fashion",
+      "price": "699",
+      "color": "blue",
+      "catagory": "jeans",
+      "discription": "Lymio Men Jeans || Men Jeans Pants || Denim Jeans || Baggy Jeans for Men (Jeans-04-05)",
+      "image": "https://m.media-amazon.com/images/I/71iKT8rnZnL._SY879_.jpg",
+      "quantity": 1,
+      "userId": "b92c",
+      "productId": "c628"
+    },
+    {
+      "id": "7c01",
+      "name": "Urban Fashion",
+      "price": "699",
+      "color": "blue",
+      "catagory": "jeans",
+      "discription": "Lymio Men Jeans || Men Jeans Pants || Denim Jeans || Baggy Jeans for Men (Jeans-04-05)",
+      "image": "https://m.media-amazon.com/images/I/71iKT8rnZnL._SY879_.jpg",
+      "quantity": 2,
+      "userId": "846f",
+      "productId": "c628"
+    },
+    {
+      "id": "5f22",
+      "name": "U.S.Polo",
+      "price": "699",
+      "color": "maroon",
+      "catagory": "shirt",
+      "discription": "Dennis Lingo Men's Cotton Box Checkered Slim Fit Casual Shirt with Chest Pocket, Full Sleeve Shirt for Formal & Casual Wear",
+      "image": "https://m.media-amazon.com/images/I/511mroWTy+L._SY679_.jpg",
+      "quantity": 1,
+      "userId": "846f",
+      "productId": "8c54"
+    },
+    {
+      "id": "6d39",
+      "name": "Allen Cooper",
+      "price": "1449",
+      "color": "white",
+      "catagory": "shoes",
+      "discription": "Allen Cooper \n Training,RoadRunning,Cricket,Gym,Sports Shoes for Men",
+      "image": "https://m.media-amazon.com/images/I/61xIr93-6VL._SY575_.jpg",
+      "quantity": 1,
+      "userId": "846f",
+      "productId": "aa36"
+    },
+    {
+      "id": "69b7",
+      "name": "amazfit Pop 3R Smartwatch",
+      "price": "3,999",
+      "color": "silver",
+      "catagory": "watch",
+      "discription": "amazfit Pop 3R Smartwatch with Bluetooth Calling (36.32mm AMOLED Display, IP68 Water Resistant, Metallic Silver Strap)\n",
+      "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1706883203/Croma%20Assets/Communication/Wearable%20Devices/Images/302170_0_qqpnqf.png?tr=w-640",
+      "quantity": 1,
+      "userId": "b92c",
+      "productId": "1296"
+    },
+    {
+      "id": "ae74",
+      "name": "Allen Cooper",
+      "price": "1449",
+      "color": "white",
+      "catagory": "shoes",
+      "discription": "Allen Cooper \n Training,RoadRunning,Cricket,Gym,Sports Shoes for Men",
+      "image": "https://m.media-amazon.com/images/I/61xIr93-6VL._SY575_.jpg",
+      "quantity": 1,
+      "userId": "b92c",
+      "productId": "aa36"
+    },
+    {
+      "id": "fb47",
+      "name": "amazfit Pop 3R Smartwatch",
+      "price": "3,999",
+      "color": "silver",
+      "catagory": "watch",
+      "discription": "amazfit Pop 3R Smartwatch with Bluetooth Calling (36.32mm AMOLED Display, IP68 Water Resistant, Metallic Silver Strap)\n",
+      "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1706883203/Croma%20Assets/Communication/Wearable%20Devices/Images/302170_0_qqpnqf.png?tr=w-640",
+      "quantity": 1,
+      "productId": "1296",
+      "userId": "846f"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<p class="pt-5"></p>
+
+<div class="container pt-3" *ngIf="productData">
+    <!--   https://www.jerecho.com/codepen/nike-product-page/ -->
+      <div class="product-image"> 
+        <img src="{{productData.image}}" alt="" class="product-pic">
+      </div>
+      
+      <div class="product-details" >
+        <header>
+          <h1 class="title">{{productData.name}}</h1>
+          <span class="colorCat">{{productData.color}}</span>
+          <div class="price">
+            <span class="current">Rs.{{productData.price}}</span>
+          </div>
+          <div class="rate">
+            <a href="#!" class="active">★</a>
+            <a href="#!" class="active">★</a>
+            <a href="#!" class="active">★</a>
+            <a href="#!">★</a>
+            <a href="#!">★</a>
+          </div>
+        </header>
+        <article>
+          <h5>Description</h5>
+          <p>{{productData.discription}}</p>
+        </article>
+        <div class="controls">
+          <div class="color">
+            <h5>color</h5>
+            <ul>
+              <li><a [style.background-color]="productData.color"  class="colors color-bdot1 active"></a></li>
+            </ul>
+          </div>
+          <div class="size">
+            <h5>catagory</h5>
+            <a href="#!" class="option">{{productData.catagory}}</a>
+          </div>
+          <div class="qty">
+            <h5>qty</h5>
+            <div class="d-flex mt-2">
+                <button style="background-color: rgb(133, 200, 185); border: none;" (click)="minusQuantity()">-</button>
+                <input type="text" value="1" style="width: 30px;" [(ngModel)]="productQuantity">
+                <button style="background-color: rgb(133, 200, 185); border: none;" (click)="plusQuantity()" >+</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="button" (click)="addToCart()">
+            <img src="http://co0kie.github.io/codepen/nike-product-page/cart.png" alt="">
+            <span>add to cart</span>
+          </button>
+          <button type="button buy-btn" >
+            <img src="http://co0kie.github.io/codepen/nike-product-page/cart.png" alt="">
+            <span>Buy Now</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+

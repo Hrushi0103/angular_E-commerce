@@ -1,0 +1,65 @@
+<div class="main-container">
+    <div class="inner-container">
+        <h1 class="fw-bold">User Sign Up</h1>
+        <form [formGroup]="userRegistrationForm">
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>enter your name</mat-label>
+                    <input matInput placeholder="name" formControlName="name" pattern="[a-zA-Z,' ']+$">
+                    <mat-hint *ngIf="Name && Name.touched && Name.invalid">invalid name</mat-hint>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter your email</mat-label>
+                    <input matInput placeholder="email" formControlName="email">
+                    <mat-hint *ngIf="Email && Email.touched && Email.invalid">invalid Email</mat-hint>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter your phone</mat-label>
+                    <input matInput placeholder="phone" formControlName="phone">
+                    <mat-hint *ngIf="Phone && Phone.touched && Phone.invalid">invalid phone</mat-hint>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter Date Of Birth</mat-label>
+                    <input matInput placeholder="dob" type="date" formControlName="dob">
+                    <mat-hint *ngIf="DOB && DOB.touched && DOB.invalid">*invalid date of birth</mat-hint>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label> password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-hint *ngIf="Password && Password.touched && Password.invalid">minimum 4 charactors required</mat-hint>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>country</mat-label>
+                    <mat-select formControlName="country">
+                      <mat-option value="india">india</mat-option>
+                      <mat-option value="nepal">nepal</mat-option>
+                      <mat-option value="shri lanka">shri lanka</mat-option>
+                      <mat-option value="china">china</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+        </form>
+        <div class="">
+            <button (click)="getFormData()" mat-raised-button color="primary" [disabled]="!userRegistrationForm.valid">Create Account</button>
+        </div>
+        <div class="Signin-btn-container"> 
+            <span>already a user ? then sign in.</span>
+            <button [routerLink]="['/signin']" mat-raised-button style="background-color: rgb(84, 223, 84); margin-top: 9px;border-radius: 20px;">Sign In</button>
+        </div>
+    </div>
+</div>
+

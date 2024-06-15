@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.inner-container{
+    background-color: rgb(255, 255, 255);
+    padding: 60px 25px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.314);
+}
+.inner-container h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+mat-form-field,.SignIn-btn ,.signUp-btn{
+    width: 100%;
+}
+mat-error{
+    font-size: 15px;
+}
+.signUp-btn-container{
+    margin-top: 20px;
+}

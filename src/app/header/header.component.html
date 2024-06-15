@@ -1,0 +1,38 @@
+<header class="border-bottom">
+  <div class="navbar px-md-5 p-0">
+    <div class="d-flex brand" routerLink="home">
+      <img class="logo-img" src="/assets/icons/application-store.gif" alt="">
+      <p class="m-auto ms-3 brand-name">EverGlow</p>
+    </div>
+    <div [ngSwitch]="menueType">
+      <div class="d-flex nav-link" *ngSwitchCase="'default'">
+        <P><a routerLink="home" routerLinkActive="active">home</a></P> 
+        <P><a routerLink="productPage" routerLinkActive="active">Products</a></P> 
+        <P><a  (click)="isSellerLoggedIn()"routerLinkActive="active">seller</a></P> 
+        <P><a routerLink="signin" routerLinkActive="active">Login</a></P> 
+        <p><i (click)="isUserLogin()" class="fi fi-br-cart-minus"></i></p>
+        <span class="cart-logo">{{countCartItem}}</span>
+        <!-- <p><a href=""></a></p> -->
+      </div>
+
+      <div class="d-flex nav-link" *ngSwitchCase="'user'">
+        <P><a routerLink="home" routerLinkActive="active">home</a></P> 
+        <P><a routerLink="productPage" routerLinkActive="active">Products</a></P> 
+        <P><a  (click)="isSellerLoggedIn()"routerLinkActive="active">seller</a></P> 
+        <P><a (click)=" userLogout()" routerLinkActive="active">logout</a></P> 
+        <p  routerLink="cartpage"><i class="fi fi-br-cart-minus"></i></p>
+        <span class="cart-logo">{{countCartItem}}</span>
+        <!-- <p><a href=""></a></p> -->
+      </div>
+
+      <div class="d-flex nav-link" *ngSwitchCase="'seller'">
+        <P><a routerLink="sellerHome" routerLinkActive="active">Dashboard</a></P> 
+        <P><a routerLink="sellerAddProduct" routerLinkActive="active">Add Product</a></P> 
+        <P><a (click)="sellerLogout()" routerLinkActive="active">Logout</a></P> 
+        <div>
+          <!-- <p>{{sellerName}}</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

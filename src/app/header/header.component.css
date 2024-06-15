@@ -1,0 +1,59 @@
+
+header{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.586);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+}
+.brand{
+    cursor: pointer;
+}
+.logo-img{
+    height: 50px;
+}
+.brand-name{
+    font-family: Rowdies;
+    font-size: 35px;
+    color: jj
+}
+.nav-link a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 8px 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.nav-link div p{
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 10%;
+    font-weight: 500;
+    
+}
+.nav-link a:hover{
+    /* background-color: rgb(82, 171, 152);
+    color: white; */
+    border-bottom: 3px solid #52ab98;
+
+}
+.nav-link p{
+    margin: auto;
+}
+.active{
+    /* background-color: rgb(82, 171, 152); */
+    /* color: rgb(255, 255, 255); */
+    border-bottom: 3px solid rgb(82, 171, 152);
+}
+i{
+    /* display: block; */
+    font-size: 20px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.cart-logo{
+    margin-top: -12px;
+}

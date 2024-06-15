@@ -1,0 +1,21 @@
+<p class="pt-5"></p>
+<!-- <div>
+    <p>No resust</p>
+</div> -->
+
+<div class="row search-item" *ngFor="let item of searchItems" routerLink="/details/{{item.id}}">
+    <div class="col-sm-3">
+        <img src="{{item.image}}" alt="">
+    </div>
+    <div class="col-sm-8 details">
+        <h3>{{item.name}}</h3>
+        <p>price:{{item.price}}</p>
+        <p>color:{{item.color}}</p>
+    </div>
+</div> 
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+table{
+    text-align: left;
+    width: 100%;
+    /* padding: 10px,20px; */
+}
+th,td{
+    border-bottom: 2px solid rgba(82, 171, 152, 0.716);
+    padding: 10px 40px;
+}
+img{
+    height: 70px;
+}
+table h1{
+    font-weight: 500;
+    font-size: 35px;
+    color: rgb(82, 171, 152);
+    padding: 15px 40px;
+}
+tbody .delete-btn{
+    border: none;
+    background-color: red;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: white;
+    width: 60px;
+}
+.edit-btn{
+    background-color: transparent;
+    padding: 3px 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(82, 171, 152);
+    width: 60px;
+}
+.edit-btn:hover{
+    background-color: rgb(82, 171, 152);
+    color: white;
+}
+.discription{
+    height: 30px;
+    overflow: hidden;
+}

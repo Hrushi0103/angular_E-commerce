@@ -1,0 +1,47 @@
+
+<div class="search-bar">
+	<div class="form-group mb-4">
+		<!-- (keyup)="searchProduct($event) for auto suggetion -->
+		<input type="search" placeholder="What're you searching for?" aria-describedby="button-addon" class="form-control border-success" [(ngModel)]="searchInput">
+		<button class="search-btn" (click)="submitSearch()">search</button>
+	  </div>
+</div>
+	<ngb-carousel>
+		<ng-template ngbSlide *ngFor="let item of popularProduct" class="carousel-item">
+			<div class="picsum-img-wrapper" routerLink="/details/{{item.id}}">
+				<img class="product-image" [src]="item.image" alt="image" loading="lazy" />
+			</div>
+			<div class="carousel-caption">
+				<h2>{{item.name}}</h2>
+				<p>{{item.discription}}</p>
+			</div>
+		</ng-template>
+	</ngb-carousel>
+
+<section>
+	<h1 class="fw-bold">EverGlow's Trendy Product</h1>
+	<div class="product-card">
+		<div class="product-wrapper border p-2" *ngFor="let item of trendyProduct">
+			<div class="product-card-image border">
+				<img src="{{item.image}}"
+					alt="image" loading="lazy">
+			</div>
+			<div class="product-details">
+				<h4 class="m-auto">{{item.name}}</h4>
+				<div class="prodct-price">
+					<p class="m-auto">Rs.{{item.price}}</p>
+				</div>
+				<div class="product-color">
+					<p class="m-auto">{{item.color}}</p>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between">
+				<p class="view-details-link" routerLink="/details/{{item.id}}"><i class="fi fi-ts-bags-shopping"></i>View Details</p>
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+</section>

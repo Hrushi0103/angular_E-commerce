@@ -1,0 +1,27 @@
+<!-- <p class="pt-5">checkout-page works!</p> -->
+
+
+<main id='container'>
+    <aside id='info'>
+        <form #orderData="ngForm">
+            <!-- email input -->
+            <label for='cardNumber'>Enter Your Email</label>
+            <input type='text' name='email' />
+
+            <!-- Address -->
+            <label for='cardholderName'>Enter Your Address</label>
+            <input type='text' name='address' />
+
+            <!-- Contact Details -->
+            <label for='cardDate'>Enter Contact Details</label>
+            <input type='text' name='details' />
+        </form>
+
+        <button id='makePayment'>PAY ON DELIVERY</button>
+    </aside>
+    <aside id='description'>
+      <h2>Total Amount</h2>
+      <h1>Rs.150</h1>
+      <button id='editOrder'(click)="orderNow()">Order Now</button>
+    </aside>
+</main>

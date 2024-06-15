@@ -1,0 +1,20 @@
+<!-- <p class="pt-5">seller-update-product works!</p> -->
+
+<div style="display: flex; justify-content: center; padding-top: 100px;">
+    <div style="border: 1px solid rgba(0, 0, 0, 0.574); padding: 10px;">
+        <h2>Update Product</h2>
+        <p class="text-center text-color-success update-msg">{{isUpdateProduct}}</p>
+        <form [formGroup]="UpdateProductForm" (ngSubmit)="onSubmit(UpdateProductForm.value)">
+            <input type="text" placeholder="Product name" name="name" formControlName="name" ngModel="{{ProdctData.name}}">
+            <mat-error *ngIf="Pname && Pname.touched && Pname.invalid">invalid</mat-error>
+            <input type="text" placeholder="product Price" name="price" formControlName="price" pattern="[0-9]+$"  ngModel="{{ProdctData.price}}">
+            <input type="text" placeholder="product Color" name="color" formControlName="color"  ngModel="{{ProdctData.color}}">
+            <input type="text" placeholder="Product Catagory" name="catagory" formControlName="catagory"  ngModel="{{ProdctData.catagory}}">
+            <textarea type="text" placeholder="Product Discription" name="discription" formControlName="discription"  ngModel="{{ProdctData.discription}}"></textarea>
+            <input type="text" placeholder="Select Product Image" name="image" formControlName="image"  ngModel="{{ProdctData.image}}">
+            <button>Update Product</button>
+        </form>
+        <button class="cancel-btn" routerLink="/sellerHome">Cancel</button>
+    </div>
+</div>
+

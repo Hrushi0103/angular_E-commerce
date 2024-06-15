@@ -1,0 +1,17 @@
+<div style="display: flex; justify-content: center; padding-top: 100px;">
+    <div style="border: 1px solid rgba(0, 0, 0, 0.574); padding: 10px;">
+        <h2>Add Product</h2>
+        <p class="text-center text-success fw-bold">{{isProductAdded}}</p>
+        <form [formGroup]="AddProductForm" (ngSubmit)="onSubmit(AddProductForm)">
+            <input type="text" placeholder="Product name" name="name" formControlName="name">
+            <mat-error *ngIf="Pname && Pname.touched && Pname.invalid">invalid</mat-error>
+            <input type="text" placeholder="product Price" name="price" formControlName="price" pattern="[0-9]+$">
+            <input type="text" placeholder="product Color" name="color" formControlName="color">
+            <input type="text" placeholder="Product Catagory" name="catagory" formControlName="catagory">
+            <textarea type="text" placeholder="Product Discription" name="discription" formControlName="discription"></textarea>
+            <input type="text" placeholder=" Product Image URL" name="image" formControlName="image">
+            <button>Add Product</button>
+        </form>
+        <!-- <button class="Cancel-btn" rou>Cancel</button> -->
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.seller-signup-form,.seller-signin-form{
+    padding: 70px;
+    margin: auto;
+}
+.signup-btn,.signin-btn, mat-form-field{
+    width: 100%;
+}
+.signup-text{
+    color: #227187;
+    font-size: 25px;
+    font-weight: 500;
+}
+.inner-form-container{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.618);
+}
+.seller-auth-toggle{
+    cursor: pointer;
+}
